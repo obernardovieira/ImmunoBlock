@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3"
+
+[packages]
+maya = "==0.6.1"
+Flask = "==1.1.1"
+nucypher = "==0.1.0a28"
+
+[pipenv]
+allow_prereleases = true
