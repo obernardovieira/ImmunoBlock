@@ -14,8 +14,8 @@
         "debug:chrome": "google-chrome --remote-debugging-port=9222",
         "docs": "typedoc --out docs ./src",
         "link-contracts": "run-script-os",
-        "link-contracts:linux:darwin": "cd src && ln -s ../../ethereum/build/contracts contracts",
-        "link-contracts:win32": "cd src && mklink \\D contracts ..\\..\\ethereum\\build\\contracts"
+        "link-contracts:linux:darwin": "cd src && ln -s ../../blockchain/build/contracts contracts",
+        "link-contracts:win32": "cd src && mklink \\D contracts ..\\..\\blockchain\\build\\contracts"
     },
     "dependencies": {
         "@types/cryptr": "4.0.0",
