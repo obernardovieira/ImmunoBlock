@@ -22,12 +22,13 @@
  *
  */
 
-const fs = require('fs');
+// const fs = require('fs');
 // eslint-disable-next-line import/no-extraneous-dependencies
 const HDWalletProvider = require('truffle-hdwallet-provider');
+const privateKey = '8f2a55949038a9610f50fb23b5883af3b4ecb3c3bb792cbcefbd1542c692be63';
 
-const infuraKey = '481071aa85d347429fd42e01558afe39';
-const mnemonic = fs.readFileSync('.secret').toString().trim();
+const infuraKey = 'x';
+const mnemonic = ''; // fs.readFileSync('.secret').toString().trim();
 
 module.exports = {
     /**
@@ -51,6 +52,12 @@ module.exports = {
             host: '127.0.0.1', // Localhost (default: none)
             port: 8545, // Standard Ethereum port (default: none)
             network_id: '*', // Any network (default: none)
+        },
+
+        quickstartWallet: {
+            provider: () => new HDWalletProvider(privateKey, 'http://localhost:8545'),
+            network_id: "*",
+            gasPrice:0
         },
 
         // Useful for deploying to a public network.
