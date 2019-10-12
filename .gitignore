@@ -88,3 +88,7 @@ docs/
 
 # secret menmonic
 .secret
+
+# chain related
+database/
+node1Address
